@@ -1,0 +1,95 @@
+* {
+  margin: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 6px;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+ul li a {
+  padding: 0 15px;
+  text-decoration: none;
+  color: #3a3a3a;
+  display: inline-block;
+}
+ul li a::after {
+  content: "";
+  width: 0px;
+  height: 4px;
+  display: block;
+  background: #c4c4f7;
+  transition: all 0.5s;
+}
+ul li a:hover::after {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  height: calc(100vh - 100px);
+  justify-content: center;
+  align-items: center;
+}
+.content-left {
+  width: 30%;
+}
+main h1 {
+  font-size: 54px;
+  color: #133b4f;
+  text-transform: uppercase;
+}
+main h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #feb546;
+}
+
+main p {
+  font-size: 20px;
+  text-align: justify;
+  font-weight: 400;
+  color: #333;
+  margin: 30px 0;
+  line-height: 40px;
+}
+
+.cta {
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  background: silver;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 50px;
+  color: white;
+}
+
+.signup-btn {
+  padding: 7px 15px;
+  border: none;
+  outline: none;
+  background: silver;
+  text-transform: uppercase;
+  border-radius: 50px;
+  box-shadow: slategrey;
+}
+.hm {
+  text-decoration: none;
+  color: white;
+}
