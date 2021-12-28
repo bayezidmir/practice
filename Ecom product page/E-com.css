@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1000px;
+  border: 2px solid black;
+  margin: 20px auto;
+  position: relative;
+}
+
+h2 {
+  text-transform: uppercase;
+  background-color: #f7f7f7;
+  height: 40px;
+  line-height: 40px;
+  /* vertical-align: middle; */
+  text-align: center;
+  border: 0 none none;
+  border-radius: 5px;
+  margin: 0 0 20px 0;
+}
+
+.product-image {
+  margin: 0 0 15px 15px;
+  border: 0.5px solid #f7f7f7;
+  border-radius: 5px;
+  flex: 350px;
+}
+
+.specification {
+  padding-left: 20px;
+  flex-basis: 360px;
+  padding-top: 35px;
+}
+
+.free-shipping {
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: #f7f7f7;
+  height: 15px;
+  line-height: 15px;
+}
+
+.sale {
+  background-color: red;
+  position: absolute;
+  font-size: 15px;
+  width: 50px;
+  text-align: center;
+  top: -12px;
+  left: -25px;
+  text-transform: uppercase;
+}
+
+.colors span {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.red {
+  height: 15px;
+  width: 15px;
+  background: red;
+  margin-right: 2px;
+  display: inline-block;
+}
+
+.yellow {
+  height: 15px;
+  width: 15px;
+  background: yellow;
+  margin-right: 2px;
+  display: inline-block;
+}
+
+.green {
+  height: 15px;
+  width: 15px;
+  background: #4cd137;
+  margin-right: 2px;
+  display: inline-block;
+}
+
+.coffee {
+  height: 15px;
+  width: 15px;
+  background: #e84118;
+  margin-right: 2px;
+  display: inline-block;
+}
+
+.black {
+  height: 15px;
+  width: 15px;
+  background: black;
+  margin-left: 10px;
+  margin-right: 2px;
+  display: inline-block;
+}
+
+.blue {
+  height: 15px;
+  width: 15px;
+  background: blue;
+  margin-right: 2px;
+  display: inline-block;
+}
+
+#info:link {
+  padding: 15px 0;
+  text-decoration: none;
+  display: block;
+}
+
+#info:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.prod-feature {
+  margin-bottom: 25px;
+  padding-left: 30px;
+}
+
+#cart {
+  width: 1000px;
+  box-sizing: border-box;
+  height: 25px;
+  background-color: black;
+  color: aliceblue;
+}
+
+#cart:hover {
+  background: white;
+  color: black;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+/* USING FLEX for layout */
+/* .colors {
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.price-shipping {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  display: flex;
+}
+
+.product-details {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pd {
+  flex-direction: column;
+  display: flex;
+  flex-basis: 300px;
+  gap: 10px;
+  padding-top: 35px;
+  line-height: 30px;
+}
+
+.ca {
+  display: flex;
+} */
+
+/* Using CSS GRID for the layout*/
+
+.price-shipping {
+  display: grid;
+  grid-template-columns: 80px 100px;
+  grid-template-rows: 50px;
+  grid-column-gap: 7px;
+}
+
+.pd {
+  display: grid;
+  grid-template-rows: 20px 50px;
+  gap: 13px;
+  margin: 35px 0 0 50px;
+}
+
+.prod-feature {
+  display: grid;
+  list-style-type: none;
+  line-height: 22px;
+}
+
+.price-shipping p {
+  display: grid;
+}
+
+.product-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.prod-feature {
+  margin-bottom: 0;
+  padding-left: 0;
+}
