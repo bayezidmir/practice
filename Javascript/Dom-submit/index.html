@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="post">
+      <div>
+        <label for="email"
+          >Email : <input type="email" id="email" name="email" required
+        /></label>
+      </div>
+
+      <div>
+        <label for="password"
+          >Pass :
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            minlength="4"
+            maxlength="8"
+        /></label>
+      </div>
+
+      <div>
+        <label for="student"
+          >Student ID :
+          <input type="student" id="student" name="student" required
+        /></label>
+      </div>
+      <div>
+        <input type="submit" value="signup" />
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
