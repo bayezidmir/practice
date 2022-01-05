@@ -1,0 +1,9 @@
+.btn {
+  padding: 1rem 2rem;
+  margin: 1rem;
+  display: block;
+}
+
+.effect {
+  box-shadow: 3px 6px 7px rgba(238, 90, 36, 0.8);
+}
